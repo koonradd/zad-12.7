@@ -18,11 +18,11 @@ function Column(id, name) {
       .addClass("add-card fa fa-plus-square")
       .text("");
 
-    $columnDelete.click(function() {
+    $columnDelete.on('click', function() {
       self.removeColumn();
     });
 
-    $columnAddCard.click(function(event) {
+    $columnAddCard.on('click', function(event) {
       var cardName = prompt("Enter the name of the card");
       event.preventDefault();
       $.ajax({

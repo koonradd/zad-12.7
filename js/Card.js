@@ -14,7 +14,7 @@ function Card(id, name) {
       .addClass("btn-delete")
       .text("x");	
 
-    $cardDelete.click(function() {
+    $cardDelete.on('click', function() {
       self.removeCard();
     });
 	$card.append($cardDelete).append($cardDescription);

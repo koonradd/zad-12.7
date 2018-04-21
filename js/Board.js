@@ -7,7 +7,7 @@ var board = {
   $element: $("#board .column-container")
 };
 
-$(".create-column").click(function() {
+$(".create-column").on('click', function() {
   var name = prompt("Enter a column name");
   if (name) {
     createAjaxColumn(name);
